@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <title>Sign Up</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .pai {
+      width: 100%;
+      height: 100vh;
+      display: grid;
+      grid-template-columns: 40% 60%;
+    }
+
+    .filho1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color:rgb(39, 39, 39);
+    }
+    .filho1 .form-items {
+      width: 363px;
+      height: 400px;
+    }
+
+    .filho1 .form-items h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #f90f;
+    }
+
+    .filho1 .form-items input {
+      border: none;
+      /* outline:thick; */
+      width: 100%;
+      height: 38px;
+      margin-bottom: 20px;
+
+      text-indent: 40px;
+      border-radius: 0%;
+    }
+
+    .inputWithIcon {
+      position: relative;
+    }
+    .inputWithIcon i {
+      position: absolute;
+      padding: 2px 13px;
+      left: 0;
+      top: 8px;
+      color: #aaaaaa
+    }
+
+    .filho1 .form-items input:focus + i{
+      color: #f90f;
+    }
+
+    .filho1 .form-items input:focus{
+      
+      outline: 2px solid #f90f;
+      
+    }
+
+    .filho1 .form-items button {
+      width: 100%;
+      height: 36px;
+      border: none;
+      outline: none;
+      margin-top: 17px;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+
+    .filho1 .form-items button:hover {
+      background-color: #f90f;
+      color: white
+    }
+
+    .filho1 .form-items span {
+      display: flex;
+      padding: 20px;
+      color: white;
+      justify-content: center;
+    }
+
+    .filho1 .form-items a {
+      margin-left: 4px;
+      color: #797979;
+    }
+
+    .filho1 .form-items a:hover {
+      color: #f90f;
+    }
+
+    .filho2 {
+      background: no-repeat center url('https://wallpapercave.com/wp/wp1904057.png');
+      background-size: cover;
+    }
+  </style>
+</head>
+<body>
+  <div class="pai">
+    <div class="filho1">
+      <div class="form-items">
+        <h1>Sign Up</h1>
+        <form method="POST" action="#" >
+        
+          <div class="inputWithIcon">
+            <input type="text" name="username" placeholder="Username" />
+            <i class="fa fa-user" aria-hidden="true"></i>
+          </div>
+
+          <div class="inputWithIcon">
+            <input type="password" name="password" placeholder="Password"/>
+            <i class="fa fa-key" aria-hidden="true"></i>
+          </div>
+
+          <button type="submit">continuar</button>
+          <span><a href="/">Já possui uma conta</a></span>
+
+        </form>
+      </div>
+    </div>
+    <div class="filho2"></div>
+  </div>
+</body>
+</html>
